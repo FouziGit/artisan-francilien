@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #B8860B;
+  --gold-light: #D4A017;
+  --gold-dark: #7D5D07;
+  --cream: #FDFBF7;
+  --cream-dark: #F5F0E8;
+  --charcoal: #1B1B1B;
+  --charcoal-light: #2D2D2D;
+}
+
+@theme inline {
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+::selection {
+  background: rgba(184, 134, 11, 0.2);
+  color: var(--charcoal);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Premium gold gradient utility */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4A017 0%, #B8860B 50%, #7D5D07 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Service card hover effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(184, 134, 11, 0.12);
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
