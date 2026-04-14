@@ -5,8 +5,7 @@ import type { Metadata } from "next";
 import { SERVICES, ZONES_IDF, SITE_NAME, SITE_URL, generateServiceJsonLd } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import dynamic from "next/dynamic";
-const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
+import AgentChatWidget from "@/components/AgentChatLoader";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));

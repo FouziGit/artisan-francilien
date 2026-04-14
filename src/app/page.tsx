@@ -3,8 +3,7 @@ import Link from "next/link";
 import { SERVICES, ZONES_IDF, FAQ_ITEMS, generateFAQJsonLd } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import dynamic from "next/dynamic";
-const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
+import AgentChatWidget from "@/components/AgentChatLoader";
 
 export default function Home() {
   const faqJsonLd = generateFAQJsonLd();
