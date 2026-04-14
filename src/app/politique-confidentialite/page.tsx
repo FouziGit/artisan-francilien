@@ -82,7 +82,7 @@ export default function PolitiqueConfidentialitePage() {
               <p>
                 Pour toute question relative à cette politique de confidentialité, vous pouvez nous contacter :<br />
                 Email : <a href="mailto:contact@artisan-francilien.fr" className="text-[#3B6EA6] underline">contact@artisan-francilien.fr</a><br />
-                Téléphone : 09.83.92.92.92
+                Téléphone : 07.65.82.26.26
               </p>
             </section>
           </div>

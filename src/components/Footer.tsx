@@ -24,11 +24,11 @@ export default function Footer() {
               Plomberie, serrurerie et vitrerie — disponibles 24h/24.
             </p>
             <div className="flex flex-col gap-2 mt-5">
-              <a href="tel:+33983929292" className="inline-flex items-center gap-2 text-sm text-white font-semibold hover:text-[#5E90C8] transition-colors">
+              <a href="tel:+33765822626" className="inline-flex items-center gap-2 text-sm text-white font-semibold hover:text-[#5E90C8] transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#5E90C8]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="font-mono">09.83.92.92.92</span>
+                <span className="font-mono">07.65.82.26.26</span>
               </a>
               <div className="flex items-center gap-4 mt-1">
                 <div className="flex items-center gap-2 text-xs">
@@ -91,7 +91,7 @@ export default function Footer() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#5E90C8]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+33983929292" className="hover:text-[#5E90C8] transition-colors font-mono">09.83.92.92.92</a>
+                <a href="tel:+33765822626" className="hover:text-[#5E90C8] transition-colors font-mono">07.65.82.26.26</a>
               </li>
               <li className="flex items-center gap-2">
                 <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0" style={{ fill: "#25D366" }} xmlns="http://www.w3.org/2000/svg">

@@ -72,13 +72,13 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+33983929292"
+            href="tel:+33765822626"
             className="hidden sm:inline-flex items-center gap-2 rounded-full gold-gradient px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105 active:scale-95 shadow-md shadow-[#3B6EA6]/20"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span className="font-mono tracking-tight">09.83.92.92.92</span>
+            <span className="font-mono tracking-tight">07.65.82.26.26</span>
           </a>
 
           {/* Hamburger */}
@@ -121,13 +121,13 @@ export default function Header() {
             <Link href="/a-propos" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-[#1A2B42] hover:text-[#3B6EA6] rounded-lg hover:bg-[#EBF3FB]">À propos</Link>
             <Link href="/contact" onClick={() => setMobileOpen(false)} className="block px-3 py-3 text-[#1A2B42] hover:text-[#3B6EA6] rounded-lg hover:bg-[#EBF3FB]">Contact</Link>
             <a
-              href="tel:+33983929292"
+              href="tel:+33765822626"
               className="flex items-center justify-center gap-2 mt-3 rounded-full gold-gradient px-5 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#3B6EA6]/20"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              09.83.92.92.92
+              07.65.82.26.26
             </a>
           </div>
         </div>

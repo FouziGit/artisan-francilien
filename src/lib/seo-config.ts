@@ -389,7 +389,7 @@ export function generateLocalBusinessJsonLd() {
     name: SITE_NAME,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    telephone: "+33-9-83-92-92-92",
+    telephone: "+33-7-65-82-26-26",
     email: "contact@artisan-francilien.fr",
     image: `${SITE_URL}/og-image.jpg`,
     priceRange: "$$",
