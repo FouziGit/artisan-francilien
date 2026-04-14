@@ -65,7 +65,7 @@ export default function AProposPage() {
               <span>/</span>
               <span className="text-white">À propos</span>
             </nav>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#D4A017] mb-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#5E90C8] mb-3">
               Qui sommes-nous ?
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
@@ -85,7 +85,7 @@ export default function AProposPage() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#3B6EA6] mb-3">
                   Notre histoire
                 </p>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1B1B1B] mb-6">
@@ -134,7 +134,7 @@ export default function AProposPage() {
         <section className="py-20 md:py-28 bg-[#FAF7F2]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3B6EA6] mb-3">
                 Ce qui nous anime
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -144,7 +144,7 @@ export default function AProposPage() {
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {COMPANY_VALUES.map((value) => (
-                <div key={value.title} className="rounded-2xl border border-[#E8E0D0] bg-white p-6 text-center transition-all hover:shadow-lg hover:border-[#B8860B]/30">
+                <div key={value.title} className="rounded-2xl border border-[#E8E0D0] bg-white p-6 text-center transition-all hover:shadow-lg hover:border-[#3B6EA6]/30">
                   <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-2xl gold-gradient text-white mb-5">
                     <ValueIcon icon={value.icon} />
                   </div>
@@ -191,17 +191,17 @@ export default function AProposPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:+33100000000"
+                href="tel:+33983929292"
                 className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                01 00 00 00 00
+                09.83.92.92.92
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-[#B8860B] px-8 py-4 text-base font-semibold text-[#B8860B] transition-colors hover:bg-[#B8860B] hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#3B6EA6] px-8 py-4 text-base font-semibold text-[#3B6EA6] transition-colors hover:bg-[#3B6EA6] hover:text-white"
               >
                 Demander un devis
               </Link>

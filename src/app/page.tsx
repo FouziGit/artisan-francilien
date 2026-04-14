@@ -30,7 +30,8 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#FDFBF7]/95 via-[#FDFBF7]/85 to-[#F5F0E8]/95" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/97 via-[#EBF3FB]/90 to-[#FDFBF7]/95" />
+            <div className="absolute inset-0 hex-bg opacity-60" />
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 md:py-36">
@@ -38,7 +39,7 @@ export default function Home() {
               {/* Text */}
               <div className="text-center md:text-left">
                 {/* ATTENTION */}
-                <p className="inline-block rounded-full border border-[#B8860B]/30 bg-[#B8860B]/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-6 animate-fade-in-up">
+                <p className="inline-block rounded-full border border-[#3B6EA6]/30 bg-[#3B6EA6]/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#2C5282] mb-6 animate-fade-in-up">
                   Artisans de confiance en Île-de-France
                 </p>
 
@@ -58,8 +59,8 @@ export default function Home() {
                 {/* ACTION */}
                 <div className="mt-8 flex flex-col sm:flex-row items-center md:items-start gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
                   <a
-                    href="tel:+33100000000"
-                    className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#B8860B]/20 transition-transform hover:scale-105 active:scale-95"
+                    href="tel:+33983929292"
+                    className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#3B6EA6]/20 transition-transform hover:scale-105 active:scale-95"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -68,7 +69,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#services"
-                    className="inline-flex items-center gap-2 rounded-full border-2 border-[#B8860B] px-8 py-4 text-base font-semibold text-[#B8860B] transition-colors hover:bg-[#B8860B] hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border-2 border-[#3B6EA6] px-8 py-4 text-base font-semibold text-[#3B6EA6] transition-colors hover:bg-[#3B6EA6] hover:text-white"
                   >
                     Découvrir nos services
                   </a>
@@ -77,19 +78,19 @@ export default function Home() {
                 {/* Trust badges */}
                 <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-[#555555]">
                   <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                     <span>Certifiés</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     <span>30 min</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
                     <span>4.8/5</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" /></svg>
                     <span>Devis gratuit</span>
                   </div>
                 </div>
@@ -139,26 +140,28 @@ export default function Home() {
         </section>
 
         {/* ─── HUB DE SERVICES ─── */}
-        <section id="services" className="py-20 md:py-28 bg-[#FDFBF7]">
+        <section id="services" className="py-20 md:py-28 bg-[#EBF3FB]/30 hex-bg">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#2C5282] mb-3">
                 Nos expertises
               </p>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1A2B42]">
                 Trois métiers, une seule exigence
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-[#555555] text-lg">
+              <p className="mx-auto mt-4 max-w-xl text-[#4A6080] text-lg">
                 Chaque intervention est réalisée par un artisan spécialisé, formé aux standards les plus élevés.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-3">
               {SERVICES.map((service) => (
-                <Link
+                <a
                   key={service.slug}
                   href={service.href}
-                  className="service-card group relative flex flex-col rounded-2xl border border-[#E8E0D0] bg-white overflow-hidden"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="service-card group relative flex flex-col rounded-2xl border border-[#3B6EA6]/15 bg-white overflow-hidden shadow-sm shadow-[#3B6EA6]/5"
                 >
                   {/* Image */}
                   <div className="relative h-52 overflow-hidden">
@@ -169,29 +172,36 @@ export default function Home() {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A2B42]/60 to-transparent" />
                     <span className="absolute bottom-3 left-4 text-3xl drop-shadow-lg">{service.icon}</span>
+                    {/* External link badge */}
+                    <span className="absolute top-3 right-3 flex items-center gap-1 rounded-full bg-white/90 px-2 py-1 text-[10px] font-semibold text-[#3B6EA6] shadow">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      Site dédié
+                    </span>
                   </div>
 
                   {/* Content */}
                   <div className="flex flex-1 flex-col p-6">
-                    <h3 className="text-xl font-serif font-bold text-[#1B1B1B] mb-2">
+                    <h3 className="text-xl font-serif font-bold text-[#1A2B42] mb-2">
                       {service.title}
                     </h3>
-                    <p className="flex-1 text-[#555555] leading-relaxed mb-4 text-sm">
+                    <p className="flex-1 text-[#4A6080] leading-relaxed mb-4 text-sm">
                       {service.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-bold text-[#B8860B]">{service.tarifs}</span>
-                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#B8860B] group-hover:gap-3 transition-all">
-                        Détails
+                      <span className="text-sm font-bold text-[#3B6EA6]">{service.tarifs}</span>
+                      <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#3B6EA6] group-hover:gap-3 transition-all">
+                        Voir le site
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                       </span>
                     </div>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -201,7 +211,7 @@ export default function Home() {
         <section className="py-20 md:py-28 bg-[#FAF7F2]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#2C5282] mb-3">
                 Simple et rapide
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -220,7 +230,7 @@ export default function Home() {
                   <div className="flex h-16 w-16 mx-auto items-center justify-center rounded-2xl bg-white border border-[#E8E0D0] shadow-sm mb-5">
                     <span className="text-2xl">{item.icon}</span>
                   </div>
-                  <span className="absolute top-2 right-2 text-5xl font-serif font-bold text-[#B8860B]/10">{item.step}</span>
+                  <span className="absolute top-2 right-2 text-5xl font-serif font-bold text-[#3B6EA6]/10">{item.step}</span>
                   <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-2">{item.title}</h3>
                   <p className="text-sm text-[#555555] leading-relaxed">{item.desc}</p>
                 </div>
@@ -230,7 +240,7 @@ export default function Home() {
         </section>
 
         {/* ─── RÉASSURANCE ─── */}
-        <section className="py-16 bg-[#1B1B1B] text-white">
+        <section className="py-16 bg-[#1A2B42] text-white">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
@@ -257,7 +267,7 @@ export default function Home() {
         <section id="faq" className="py-20 md:py-28 bg-[#FAF7F2]">
           <div className="mx-auto max-w-3xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#2C5282] mb-3">
                 Questions fréquentes
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -271,9 +281,9 @@ export default function Home() {
                   key={i}
                   className="group rounded-xl border border-[#E8E0D0] bg-white overflow-hidden"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 text-[#1B1B1B] font-medium transition-colors hover:text-[#B8860B] [&::-webkit-details-marker]:hidden">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 text-[#1B1B1B] font-medium transition-colors hover:text-[#3B6EA6] [&::-webkit-details-marker]:hidden">
                     <span>{item.question}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0 text-[#B8860B] transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0 text-[#3B6EA6] transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
@@ -309,13 +319,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:+33100000000"
+                href="tel:+33983929292"
                 className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                01 00 00 00 00
+                09.83.92.92.92
               </a>
               <Link
                 href="/contact"
@@ -331,7 +341,7 @@ export default function Home() {
         <section id="zones" className="py-20 md:py-28 bg-[#FDFBF7]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#2C5282] mb-3">
                 Couverture complète
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -346,12 +356,12 @@ export default function Home() {
               {ZONES_IDF.map((zone) => (
                 <div
                   key={zone.code}
-                  className="group flex items-center gap-3 rounded-xl border border-[#E8E0D0] bg-white px-5 py-4 transition-all hover:border-[#B8860B]/40 hover:shadow-md"
+                  className="group flex items-center gap-3 rounded-xl border border-[#E8E0D0] bg-white px-5 py-4 transition-all hover:border-[#3B6EA6]/40 hover:shadow-md"
                 >
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg gold-gradient text-sm font-bold text-white">
                     {zone.code}
                   </span>
-                  <span className="text-sm font-medium text-[#2D2D2D] group-hover:text-[#B8860B] transition-colors">
+                  <span className="text-sm font-medium text-[#2D2D2D] group-hover:text-[#3B6EA6] transition-colors">
                     {zone.nom}
                   </span>
                 </div>

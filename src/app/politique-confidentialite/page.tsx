@@ -66,7 +66,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li>Droit d&apos;opposition</li>
               </ul>
               <p>
-                Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@artisan-francilien.fr" className="text-[#B8860B] underline">contact@artisan-francilien.fr</a>
+                Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@artisan-francilien.fr" className="text-[#3B6EA6] underline">contact@artisan-francilien.fr</a>
               </p>
             </section>
 
@@ -81,8 +81,8 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="text-xl font-serif font-bold text-[#1B1B1B]">6. Contact</h2>
               <p>
                 Pour toute question relative à cette politique de confidentialité, vous pouvez nous contacter :<br />
-                Email : <a href="mailto:contact@artisan-francilien.fr" className="text-[#B8860B] underline">contact@artisan-francilien.fr</a><br />
-                Téléphone : 01 00 00 00 00
+                Email : <a href="mailto:contact@artisan-francilien.fr" className="text-[#3B6EA6] underline">contact@artisan-francilien.fr</a><br />
+                Téléphone : 09.83.92.92.92
               </p>
             </section>
           </div>

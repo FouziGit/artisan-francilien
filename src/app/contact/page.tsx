@@ -48,8 +48,8 @@ export default function ContactPage() {
                 Retour à l&apos;accueil
               </Link>
               <a
-                href="tel:+33100000000"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-[#B8860B] px-8 py-3.5 text-sm font-semibold text-[#B8860B] transition-colors hover:bg-[#B8860B] hover:text-white"
+                href="tel:+33983929292"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#3B6EA6] px-8 py-3.5 text-sm font-semibold text-[#3B6EA6] transition-colors hover:bg-[#3B6EA6] hover:text-white"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -74,12 +74,12 @@ export default function ContactPage() {
         <section className="bg-gradient-to-b from-[#FAF7F2] to-[#FDFBF7] py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-6">
             <nav className="flex items-center gap-2 text-sm text-[#6B6B6B] mb-6">
-              <Link href="/" className="hover:text-[#B8860B] transition-colors">Accueil</Link>
+              <Link href="/" className="hover:text-[#3B6EA6] transition-colors">Accueil</Link>
               <span>/</span>
               <span className="text-[#1B1B1B]">Contact</span>
             </nav>
             <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#3B6EA6] mb-3">
                 Contactez-nous
               </p>
               <h1 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                         name="nom"
                         type="text"
                         required
-                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                         placeholder="Votre nom"
                       />
                     </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                         name="prenom"
                         type="text"
                         required
-                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                         placeholder="Votre prénom"
                       />
                     </div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                         name="email"
                         type="email"
                         required
-                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                         placeholder="votre@email.fr"
                       />
                     </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                         name="tel"
                         type="tel"
                         required
-                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                        className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                         placeholder="ex. 06 12 34 56 78"
                       />
                     </div>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                       id="service"
                       name="service"
                       required
-                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                     >
                       <option value="">Choisir un service</option>
                       <option value="plomberie">Plomberie</option>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                       id="departement"
                       name="departement"
                       required
-                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
+                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10"
                     >
                       <option value="">Choisir un département</option>
                       {ZONES_IDF.map((z) => (
@@ -188,7 +188,7 @@ export default function ContactPage() {
                       {["Normal", "Urgent", "Très urgent"].map((level) => (
                         <label key={level} className="flex-1 cursor-pointer">
                           <input type="radio" name="urgence" value={level} className="peer sr-only" defaultChecked={level === "Normal"} />
-                          <div className="rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-center text-sm transition-all peer-checked:border-[#B8860B] peer-checked:bg-[#B8860B]/5 peer-checked:text-[#B8860B] peer-checked:font-semibold hover:border-[#B8860B]/40">
+                          <div className="rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-center text-sm transition-all peer-checked:border-[#3B6EA6] peer-checked:bg-[#3B6EA6]/5 peer-checked:text-[#3B6EA6] peer-checked:font-semibold hover:border-[#3B6EA6]/40">
                             {level}
                           </div>
                         </label>
@@ -203,7 +203,7 @@ export default function ContactPage() {
                       name="message"
                       rows={5}
                       required
-                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10 resize-none"
+                      className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#3B6EA6] focus:ring-2 focus:ring-[#3B6EA6]/10 resize-none"
                       placeholder="Décrivez votre besoin en quelques lignes..."
                     />
                   </div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#B8860B]/20 transition-transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+                    className="w-full rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#3B6EA6]/20 transition-transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
                     {status === "submitting" ? (
                       <span className="flex items-center justify-center gap-2">
@@ -227,7 +227,7 @@ export default function ContactPage() {
                   </button>
                   <p className="text-xs text-center text-[#9B9B9B]">
                     En soumettant ce formulaire, vous acceptez notre{" "}
-                    <a href="/politique-confidentialite" className="underline hover:text-[#B8860B]">politique de confidentialité</a>.
+                    <a href="/politique-confidentialite" className="underline hover:text-[#3B6EA6]">politique de confidentialité</a>.
                   </p>
                 </form>
               </div>
@@ -238,25 +238,25 @@ export default function ContactPage() {
                   <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-4">Informations</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <div>
                         <p className="text-sm font-semibold text-[#1B1B1B]">Téléphone</p>
-                        <a href="tel:+33100000000" className="text-sm text-[#6B6B6B] hover:text-[#B8860B]">01 00 00 00 00</a>
+                        <a href="tel:+33983929292" className="text-sm text-[#6B6B6B] hover:text-[#3B6EA6]">09.83.92.92.92</a>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       <div>
                         <p className="text-sm font-semibold text-[#1B1B1B]">Email</p>
-                        <a href="mailto:contact@artisan-francilien.fr" className="text-sm text-[#6B6B6B] hover:text-[#B8860B]">contact@artisan-francilien.fr</a>
+                        <a href="mailto:contact@artisan-francilien.fr" className="text-sm text-[#6B6B6B] hover:text-[#3B6EA6]">contact@artisan-francilien.fr</a>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <div>
@@ -265,7 +265,7 @@ export default function ContactPage() {
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -283,19 +283,19 @@ export default function ContactPage() {
                     Pour une intervention immédiate, appelez-nous directement. Nos artisans sont disponibles 24h/24.
                   </p>
                   <a
-                    href="tel:+33100000000"
-                    className="flex items-center justify-center gap-2 w-full rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#B8860B] transition-transform hover:scale-105"
+                    href="tel:+33983929292"
+                    className="flex items-center justify-center gap-2 w-full rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#3B6EA6] transition-transform hover:scale-105"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    01 00 00 00 00
+                    09.83.92.92.92
                   </a>
                 </div>
 
                 {/* Trust badges */}
                 <div className="rounded-2xl border border-[#E8E0D0] bg-white p-6 shadow-sm">
-                  <h4 className="text-sm font-semibold uppercase tracking-wider text-[#B8860B] mb-4">Pourquoi nous choisir</h4>
+                  <h4 className="text-sm font-semibold uppercase tracking-wider text-[#3B6EA6] mb-4">Pourquoi nous choisir</h4>
                   <ul className="space-y-3">
                     {[
                       "Devis gratuit et sans engagement",

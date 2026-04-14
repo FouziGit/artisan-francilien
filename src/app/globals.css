@@ -1,18 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --gold: #B8860B;
-  --gold-light: #D4A017;
-  --gold-dark: #7D5D07;
+  --blue: #3B6EA6;
+  --blue-light: #5E90C8;
+  --blue-dark: #2C5282;
+  --blue-pale: #EBF3FB;
+  /* kept as aliases so existing classes keep working */
+  --gold: #3B6EA6;
+  --gold-light: #5E90C8;
+  --gold-dark: #2C5282;
   --cream: #FDFBF7;
   --cream-dark: #F5F0E8;
-  --charcoal: #1B1B1B;
-  --charcoal-light: #2D2D2D;
-  /* Contrast-safe muted text (5.4:1 on cream) */
-  --muted: #555555;
+  --charcoal: #1A2B42;
+  --charcoal-light: #2D3E55;
+  --muted: #4A6080;
 }
 
 @theme inline {
+  --color-blue: var(--blue);
+  --color-blue-light: var(--blue-light);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-pale: var(--blue-pale);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
   --color-gold-dark: var(--gold-dark);
@@ -35,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background: rgba(184, 134, 11, 0.2);
+  background: rgba(59, 110, 166, 0.2);
   color: var(--charcoal);
 }
 
@@ -44,13 +52,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Premium gold gradient utility */
+/* Hexagonal background pattern — subtle brand motif */
+.hex-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpolygon points='30,2 58,17 58,35 30,50 2,35 2,17' fill='none' stroke='%233B6EA6' stroke-width='0.7' stroke-opacity='0.07'/%3E%3C/svg%3E");
+  background-size: 60px 52px;
+}
+
+/* Blue gradient utility */
 .gold-gradient {
-  background: linear-gradient(135deg, #D4A017 0%, #B8860B 50%, #7D5D07 100%);
+  background: linear-gradient(135deg, #5E90C8 0%, #3B6EA6 50%, #2C5282 100%);
 }
 
 .gold-text {
-  background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+  background: linear-gradient(135deg, #5E90C8 0%, #3B6EA6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -62,7 +76,7 @@ html {
 }
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(184, 134, 11, 0.12);
+  box-shadow: 0 20px 40px rgba(59, 110, 166, 0.12);
 }
 
 /* Subtle fade-in animation */

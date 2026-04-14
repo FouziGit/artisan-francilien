@@ -115,7 +115,7 @@ export default async function ServicePage({
                 <div className="grid sm:grid-cols-2 gap-3 mb-10">
                   {service.prestations.map((p, i) => (
                     <div key={i} className="flex items-start gap-3 rounded-lg border border-[#E8E0D0] bg-white p-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 shrink-0 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 shrink-0 text-[#3B6EA6]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-sm text-[#2D2D2D]">{p}</span>
@@ -143,17 +143,17 @@ export default async function ServicePage({
                     <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-4">Besoin d&apos;un {professionMap[service.title.toLowerCase()] ?? "artisan"} ?</h3>
                     <p className="text-sm text-[#6B6B6B] mb-6">Intervention rapide en Île-de-France. Devis gratuit et sans engagement.</p>
                     <a
-                      href="tel:+33100000000"
+                      href="tel:+33983929292"
                       className="flex items-center justify-center gap-2 w-full rounded-full gold-gradient px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
-                      Appeler : 01 00 00 00 00
+                      Appeler : 09.83.92.92.92
                     </a>
                     <Link
                       href="/contact"
-                      className="flex items-center justify-center w-full mt-3 rounded-full border-2 border-[#B8860B] px-6 py-3 text-sm font-semibold text-[#B8860B] transition-colors hover:bg-[#B8860B] hover:text-white"
+                      className="flex items-center justify-center w-full mt-3 rounded-full border-2 border-[#3B6EA6] px-6 py-3 text-sm font-semibold text-[#3B6EA6] transition-colors hover:bg-[#3B6EA6] hover:text-white"
                     >
                       Demander un devis
                     </Link>
@@ -161,7 +161,7 @@ export default async function ServicePage({
 
                   {/* Guarantees */}
                   <div className="rounded-2xl border border-[#E8E0D0] bg-white p-6 shadow-sm">
-                    <h4 className="text-sm font-semibold uppercase tracking-wider text-[#B8860B] mb-4">Nos garanties</h4>
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-[#3B6EA6] mb-4">Nos garanties</h4>
                     <ul className="space-y-3">
                       {[
                         "Devis gratuit et transparent",
@@ -182,17 +182,22 @@ export default async function ServicePage({
 
                   {/* Other services */}
                   <div className="rounded-2xl border border-[#E8E0D0] bg-white p-6 shadow-sm">
-                    <h4 className="text-sm font-semibold uppercase tracking-wider text-[#B8860B] mb-4">Autres services</h4>
+                    <h4 className="text-sm font-semibold uppercase tracking-wider text-[#3B6EA6] mb-4">Autres services</h4>
                     <div className="space-y-2">
                       {otherServices.map((s) => (
-                        <Link
+                        <a
                           key={s.slug}
                           href={s.href}
-                          className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#2D2D2D] transition-colors hover:bg-[#FAF7F2] hover:text-[#B8860B]"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#2D2D2D] transition-colors hover:bg-[#EBF3FB] hover:text-[#3B6EA6]"
                         >
                           <span className="text-lg">{s.icon}</span>
-                          {s.title}
-                        </Link>
+                          <span className="flex-1">{s.title}</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
                       ))}
                     </div>
                   </div>

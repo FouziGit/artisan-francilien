@@ -27,7 +27,7 @@ export default function MentionsLegalesPage() {
                 Siège social : [Adresse complète]<br />
                 SIRET : [Numéro SIRET]<br />
                 RCS : [Ville] [Numéro RCS]<br />
-                Téléphone : 01 00 00 00 00<br />
+                Téléphone : 09.83.92.92.92<br />
                 Email : contact@artisan-francilien.fr
               </p>
             </section>
@@ -63,7 +63,7 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-xl font-serif font-bold text-[#1B1B1B]">6. Données personnelles</h2>
               <p>
-                Pour toute information relative à la collecte et au traitement de vos données personnelles, veuillez consulter notre <a href="/politique-confidentialite" className="text-[#B8860B] underline">politique de confidentialité</a>.
+                Pour toute information relative à la collecte et au traitement de vos données personnelles, veuillez consulter notre <a href="/politique-confidentialite" className="text-[#3B6EA6] underline">politique de confidentialité</a>.
               </p>
             </section>
           </div>
