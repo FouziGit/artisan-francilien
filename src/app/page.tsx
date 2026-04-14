@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SERVICES, ZONES_IDF, TESTIMONIALS, FAQ_ITEMS, generateFAQJsonLd } from "@/lib/seo-config";
+import { SERVICES, ZONES_IDF, FAQ_ITEMS, generateFAQJsonLd } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AgentChatWidget from "@/components/AgentChat";
+import dynamic from "next/dynamic";
+const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
 
 export default function Home() {
   const faqJsonLd = generateFAQJsonLd();
@@ -37,7 +38,7 @@ export default function Home() {
               {/* Text */}
               <div className="text-center md:text-left">
                 {/* ATTENTION */}
-                <p className="inline-block rounded-full border border-[#B8860B]/30 bg-[#B8860B]/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-6 animate-fade-in-up">
+                <p className="inline-block rounded-full border border-[#B8860B]/30 bg-[#B8860B]/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-6 animate-fade-in-up">
                   Artisans de confiance en Île-de-France
                 </p>
 
@@ -74,7 +75,7 @@ export default function Home() {
                 </div>
 
                 {/* Trust badges */}
-                <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-[#6B6B6B]">
+                <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-[#555555]">
                   <div className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#B8860B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                     <span>Certifiés</span>
@@ -114,7 +115,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-[#1B1B1B]">Années</p>
-                      <p className="text-xs text-[#6B6B6B]">d&apos;expérience</p>
+                      <p className="text-xs text-[#555555]">d&apos;expérience</p>
                     </div>
                   </div>
                 </div>
@@ -128,7 +129,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-[#1B1B1B]">12 000+</p>
-                      <p className="text-xs text-[#6B6B6B]">Interventions</p>
+                      <p className="text-xs text-[#555555]">Interventions</p>
                     </div>
                   </div>
                 </div>
@@ -141,19 +142,19 @@ export default function Home() {
         <section id="services" className="py-20 md:py-28 bg-[#FDFBF7]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
                 Nos expertises
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
                 Trois métiers, une seule exigence
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-[#6B6B6B] text-lg">
+              <p className="mx-auto mt-4 max-w-xl text-[#555555] text-lg">
                 Chaque intervention est réalisée par un artisan spécialisé, formé aux standards les plus élevés.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-3">
-              {SERVICES.map((service, i) => (
+              {SERVICES.map((service) => (
                 <Link
                   key={service.slug}
                   href={service.href}
@@ -177,7 +178,7 @@ export default function Home() {
                     <h3 className="text-xl font-serif font-bold text-[#1B1B1B] mb-2">
                       {service.title}
                     </h3>
-                    <p className="flex-1 text-[#6B6B6B] leading-relaxed mb-4 text-sm">
+                    <p className="flex-1 text-[#555555] leading-relaxed mb-4 text-sm">
                       {service.description}
                     </p>
                     <div className="flex items-center justify-between">
@@ -200,7 +201,7 @@ export default function Home() {
         <section className="py-20 md:py-28 bg-[#FAF7F2]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
                 Simple et rapide
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -221,7 +222,7 @@ export default function Home() {
                   </div>
                   <span className="absolute top-2 right-2 text-5xl font-serif font-bold text-[#B8860B]/10">{item.step}</span>
                   <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-2">{item.title}</h3>
-                  <p className="text-sm text-[#6B6B6B] leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-[#555555] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -252,62 +253,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── TÉMOIGNAGES ─── */}
-        <section id="temoignages" className="py-20 md:py-28 bg-[#FDFBF7]">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
-                Ils nous font confiance
-              </p>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
-                Avis de nos clients
-              </h2>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              {TESTIMONIALS.map((t, i) => (
-                <div key={i} className="flex flex-col rounded-2xl border border-[#E8E0D0] bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                  {/* Stars */}
-                  <div className="flex gap-0.5 mb-4">
-                    {Array.from({ length: t.rating }).map((_, j) => (
-                      <svg key={j} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#D4A017]" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-
-                  {/* Quote */}
-                  <p className="flex-1 text-sm text-[#4A4A4A] leading-relaxed mb-4 italic">
-                    &ldquo;{t.text}&rdquo;
-                  </p>
-
-                  {/* Author */}
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#F0EBE1]">
-                    <Image
-                      src={t.avatar}
-                      alt={t.name}
-                      width={40}
-                      height={40}
-                      className="rounded-full object-cover"
-                      loading="lazy"
-                    />
-                    <div>
-                      <p className="text-sm font-semibold text-[#1B1B1B]">{t.name}</p>
-                      <p className="text-xs text-[#6B6B6B]">{t.location}</p>
-                    </div>
-                    <span className="ml-auto text-xs font-medium text-[#B8860B] bg-[#B8860B]/5 rounded-full px-2 py-0.5">{t.service}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ─── FAQ ─── */}
         <section id="faq" className="py-20 md:py-28 bg-[#FAF7F2]">
           <div className="mx-auto max-w-3xl px-6">
             <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
                 Questions fréquentes
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
@@ -381,13 +331,13 @@ export default function Home() {
         <section id="zones" className="py-20 md:py-28 bg-[#FDFBF7]">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center mb-12">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#7D5D07] mb-3">
                 Couverture complète
               </p>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
                 Zones d&apos;intervention
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-[#6B6B6B] text-lg">
+              <p className="mx-auto mt-4 max-w-xl text-[#555555] text-lg">
                 Nous intervenons dans tous les départements d&apos;Île-de-France, 7 jours sur 7.
               </p>
             </div>

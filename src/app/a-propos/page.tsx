@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SITE_NAME, TEAM_MEMBERS, COMPANY_VALUES } from "@/lib/seo-config";
+import { SITE_NAME, COMPANY_VALUES } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AgentChatWidget from "@/components/AgentChat";
@@ -93,14 +93,14 @@ export default function AProposPage() {
                 </h2>
                 <div className="space-y-4 text-[#4A4A4A] leading-relaxed">
                   <p>
-                    Fondé en 2009 par Marc Dubois, maître plombier passionné, Artisan Francilien a débuté
-                    comme un petit atelier de quartier dans le 15e arrondissement de Paris. Très vite, la
-                    qualité de nos prestations et notre réactivité nous ont permis de nous développer.
+                    Artisan Francilien est né d&apos;une conviction simple : chaque foyer d&apos;Île-de-France
+                    mérite un service artisanal rapide, fiable et au juste prix. Depuis nos débuts,
+                    nous avons bâti notre réputation sur la qualité de nos interventions et notre réactivité.
                   </p>
                   <p>
-                    Aujourd&apos;hui, notre équipe compte une dizaine d&apos;artisans spécialisés couvrant
-                    trois corps de métier : plomberie, serrurerie et vitrerie. Nous intervenons dans les
-                    8 départements d&apos;Île-de-France, 7 jours sur 7.
+                    Notre équipe d&apos;artisans spécialisés couvre trois corps de métier complémentaires :
+                    plomberie, serrurerie et vitrerie. Nous intervenons dans les 8 départements
+                    d&apos;Île-de-France, 7 jours sur 7, y compris les nuits et jours fériés.
                   </p>
                   <p>
                     Notre force ? Un engagement sans faille envers la satisfaction client, des tarifs
@@ -150,43 +150,6 @@ export default function AProposPage() {
                   </div>
                   <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-2">{value.title}</h3>
                   <p className="text-sm text-[#6B6B6B] leading-relaxed">{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* L'équipe */}
-        <section className="py-20 md:py-28 bg-[#FDFBF7]">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#B8860B] mb-3">
-                Des experts à votre service
-              </p>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1B1B1B]">
-                Notre équipe
-              </h2>
-              <p className="mx-auto mt-4 max-w-xl text-[#6B6B6B] text-lg">
-                Des artisans passionnés, certifiés et engagés pour votre satisfaction.
-              </p>
-            </div>
-
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {TEAM_MEMBERS.map((member) => (
-                <div key={member.name} className="group rounded-2xl border border-[#E8E0D0] bg-white overflow-hidden transition-all hover:shadow-lg">
-                  <div className="relative h-64 overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="text-lg font-serif font-bold text-[#1B1B1B]">{member.name}</h3>
-                    <p className="text-sm font-medium text-[#B8860B] mb-2">{member.role}</p>
-                    <p className="text-sm text-[#6B6B6B] leading-relaxed">{member.bio}</p>
-                  </div>
                 </div>
               ))}
             </div>

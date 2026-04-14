@@ -41,8 +41,8 @@ export const SERVICES = [
     icon: "💧",
     href: "/services/plomberie",
     externalHref: "https://plomberie-idf.fr",
-    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=75",
+    heroImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=75",
     keywords: ["plombier", "fuite d'eau", "dépannage plomberie", "plombier urgence Paris"],
     prestations: [
       "Réparation de fuites d'eau",
@@ -66,8 +66,8 @@ export const SERVICES = [
     icon: "🔑",
     href: "/services/serrurerie",
     externalHref: "https://serrurerie-idf.fr",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1621274147744-cfb5694bb233?w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=75",
+    heroImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=75",
     keywords: ["serrurier", "ouverture de porte", "dépannage serrurerie", "serrurier 92"],
     prestations: [
       "Ouverture de porte claquée / bloquée",
@@ -91,8 +91,8 @@ export const SERVICES = [
     icon: "🪟",
     href: "/services/vitrerie",
     externalHref: "https://vitrerie-idf.fr",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
-    heroImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75",
+    heroImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=75",
     keywords: ["vitrier", "remplacement vitre", "double vitrage", "vitrier urgence 94"],
     prestations: [
       "Remplacement vitre cassée (urgence)",
@@ -115,7 +115,7 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "Intervention rapide pour une fuite en pleine nuit. Le plombier était professionnel, propre et efficace. Tarif conforme au devis. Je recommande !",
     service: "Plomberie",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=75",
   },
   {
     name: "Thomas L.",
@@ -123,7 +123,7 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "Porte claquée un dimanche soir, intervention en 20 minutes. Serrurier très compétent, aucun dégât sur la porte. Prix honnête.",
     service: "Serrurerie",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=75",
   },
   {
     name: "Sophie M.",
@@ -131,7 +131,7 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "Remplacement de double vitrage impeccable. Le vitrier a pris le temps de bien conseiller et le résultat est parfait. Isolation nettement améliorée.",
     service: "Vitrerie",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=75",
   },
   {
     name: "Jean-Pierre R.",
@@ -139,7 +139,7 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "Excellente prestation pour la rénovation complète de ma salle de bain. Équipe ponctuelle, travail soigné, et chantier toujours propre.",
     service: "Plomberie",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=75",
   },
 ] as const;
 
@@ -181,25 +181,25 @@ export const TEAM_MEMBERS = [
     name: "Marc Dubois",
     role: "Fondateur & Maître Plombier",
     bio: "Plus de 20 ans d'expérience en plomberie. Certifié RGE et spécialiste des installations complexes.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=75",
   },
   {
     name: "Karim Benali",
     role: "Chef d'équipe Serrurerie",
     bio: "Expert en serrurerie haute sécurité. Formé aux techniques d'ouverture fine et au blindage de portes.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=75",
   },
   {
     name: "Lucas Martin",
     role: "Maître Vitrier",
     bio: "Spécialiste du double vitrage et des vitrines commerciales. 15 ans de métier en Île-de-France.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=75",
   },
   {
     name: "Sophie Laurent",
     role: "Responsable Clientèle",
     bio: "Votre interlocutrice dédiée. Gère les devis, la planification et le suivi de vos interventions.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=75",
   },
 ] as const;
 
@@ -228,55 +228,55 @@ export const COMPANY_VALUES = [
 
 export const GALLERY_ITEMS = [
   {
-    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=75",
     title: "Rénovation salle de bain complète",
     category: "Plomberie",
     location: "Paris 16e",
   },
   {
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=75",
     title: "Installation douche à l'italienne",
     category: "Plomberie",
     location: "Boulogne-Billancourt (92)",
   },
   {
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=75",
     title: "Blindage porte d'entrée",
     category: "Serrurerie",
     location: "Neuilly-sur-Seine (92)",
   },
   {
-    image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=75",
     title: "Installation serrure haute sécurité",
     category: "Serrurerie",
     location: "Saint-Denis (93)",
   },
   {
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75",
     title: "Pose double vitrage bureau",
     category: "Vitrerie",
     location: "La Défense (92)",
   },
   {
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=75",
     title: "Vitrine commerciale sur mesure",
     category: "Vitrerie",
     location: "Paris 11e",
   },
   {
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=75",
     title: "Remplacement chauffe-eau",
     category: "Plomberie",
     location: "Vincennes (94)",
   },
   {
-    image: "https://images.unsplash.com/photo-1621274147744-cfb5694bb233?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=75",
     title: "Ouverture porte blindée",
     category: "Serrurerie",
     location: "Versailles (78)",
   },
   {
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75",
     title: "Remplacement baie vitrée",
     category: "Vitrerie",
     location: "Créteil (94)",

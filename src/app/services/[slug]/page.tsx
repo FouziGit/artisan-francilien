@@ -5,9 +5,8 @@ import type { Metadata } from "next";
 import { SERVICES, ZONES_IDF, SITE_NAME, SITE_URL, generateServiceJsonLd } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AgentChatWidget from "@/components/AgentChat";
-
-type ServiceSlug = (typeof SERVICES)[number]["slug"];
+import dynamic from "next/dynamic";
+const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -47,6 +46,7 @@ export default async function ServicePage({
 
   const jsonLd = generateServiceJsonLd(service);
   const otherServices = SERVICES.filter((s) => s.slug !== slug);
+  const professionMap: Record<string, string> = { vitrerie: "vitrier", plomberie: "plombier", serrurerie: "serrurier" };
 
   return (
     <>
@@ -140,7 +140,7 @@ export default async function ServicePage({
                 {/* CTA Card */}
                 <div className="sticky top-24 space-y-6">
                   <div className="rounded-2xl border border-[#E8E0D0] bg-white p-6 shadow-sm">
-                    <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-4">Besoin d&apos;un {service.title.toLowerCase() === "vitrerie" ? "vitrier" : service.title.toLowerCase() === "plomberie" ? "plombier" : "serrurier"} ?</h3>
+                    <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-4">Besoin d&apos;un {professionMap[service.title.toLowerCase()] ?? "artisan"} ?</h3>
                     <p className="text-sm text-[#6B6B6B] mb-6">Intervention rapide en Île-de-France. Devis gratuit et sans engagement.</p>
                     <a
                       href="tel:+33100000000"

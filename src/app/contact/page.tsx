@@ -5,7 +5,8 @@ import Link from "next/link";
 import { ZONES_IDF } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AgentChatWidget from "@/components/AgentChat";
+import dynamic from "next/dynamic";
+const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -145,7 +146,7 @@ export default function ContactPage() {
                         type="tel"
                         required
                         className="w-full rounded-xl border border-[#E8E0D0] bg-[#FAF7F2] px-4 py-3 text-sm text-[#1B1B1B] placeholder-[#9B9B9B] outline-none transition-colors focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B]/10"
-                        placeholder="06 00 00 00 00"
+                        placeholder="ex. 06 12 34 56 78"
                       />
                     </div>
                   </div>

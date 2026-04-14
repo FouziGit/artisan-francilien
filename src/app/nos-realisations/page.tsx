@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { GALLERY_ITEMS, SITE_NAME } from "@/lib/seo-config";
+import { GALLERY_ITEMS } from "@/lib/seo-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AgentChatWidget from "@/components/AgentChat";
+import dynamic from "next/dynamic";
+const AgentChatWidget = dynamic(() => import("@/components/AgentChat"), { ssr: false });
 
 const CATEGORIES = ["Toutes", "Plomberie", "Serrurerie", "Vitrerie"] as const;
 
