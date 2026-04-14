@@ -226,12 +226,21 @@ export default function Home() {
                 { step: "04", title: "Satisfaction", desc: "Vous recevez une facture claire et une garantie sur les travaux effectués.", icon: "✅" },
               ].map((item) => (
                 <div key={item.step} className="relative text-center p-6">
-                  <div className="flex h-16 w-16 mx-auto items-center justify-center rounded-2xl bg-white border border-[#E8E0D0] shadow-sm mb-5">
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute top-0 right-2 select-none font-serif font-black leading-none text-7xl md:text-8xl text-transparent"
+                    style={{
+                      WebkitTextStroke: "1.5px #3B6EA6",
+                      opacity: 0.35,
+                    }}
+                  >
+                    {item.step}
+                  </span>
+                  <div className="relative flex h-16 w-16 mx-auto items-center justify-center rounded-2xl bg-white border border-[#E8E0D0] shadow-sm mb-5">
                     <span className="text-2xl">{item.icon}</span>
                   </div>
-                  <span className="absolute top-2 right-2 text-5xl font-serif font-bold text-[#3B6EA6]/10">{item.step}</span>
-                  <h3 className="text-lg font-serif font-bold text-[#1B1B1B] mb-2">{item.title}</h3>
-                  <p className="text-sm text-[#555555] leading-relaxed">{item.desc}</p>
+                  <h3 className="relative text-lg font-serif font-bold text-[#1B1B1B] mb-2">{item.title}</h3>
+                  <p className="relative text-sm text-[#555555] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
