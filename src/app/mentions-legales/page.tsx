@@ -27,7 +27,7 @@ export default function MentionsLegalesPage() {
                 Siège social : [Adresse complète]<br />
                 SIRET : [Numéro SIRET]<br />
                 RCS : [Ville] [Numéro RCS]<br />
-                Téléphone : 07.65.82.26.26<br />
+                Téléphone : 09.83.92.92.92<br />
                 Email : contact@artisan-francilien.fr
               </p>
             </section>

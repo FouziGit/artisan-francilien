@@ -58,7 +58,7 @@ export default function Home() {
                 {/* ACTION */}
                 <div className="mt-8 flex flex-col sm:flex-row items-center md:items-start gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
                   <a
-                    href="tel:+33765822626"
+                    href="tel:+33983929292"
                     className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#3B6EA6]/20 transition-transform hover:scale-105 active:scale-95"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -327,16 +327,16 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
               <a
-                href="tel:+33765822626"
+                href="tel:+33983929292"
                 className="inline-flex items-center gap-2 rounded-full gold-gradient px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                07.65.82.26.26
+                09.83.92.92.92
               </a>
               <a
-                href="https://wa.me/33765822626"
+                href="https://wa.me/33765828585"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105"
